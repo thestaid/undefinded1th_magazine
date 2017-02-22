@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Step03_Progressbar_test.html</title>
+   <script src="js/jquery-3.1.1.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <link rel="stylesheet" href="css/bootstrap.css"/>
+   <style>
+   		body {
+   			margin: 0;
+   			background-image: url("./images/back4.jpg");
+   			background-size: cover;
+			/*z-index : 100;*/
+   			/*background-color: black;*/
+   		}
+   		#body_cover {
+   			width: 100%;
+   			height: 100vh;
+   			z-index : 100;
+   			opacity: 0;
+   			left:0;
+   			top:0;
+   			position: absolute;
+   			background-size: contain;
+   			background-image: url("./images/title6.png") ;
+   		}
+   		#content {
+   			position: absolute;
+   			left: calc((100% - 600px) / 2);
+   			top: calc((100vh - 250px) / 2);
+   			width: 600px;
+   			height: 150px;
+   			z-index : 1000;
+   			margin: 0 auto;
+   		}
+   		#content img {
+   			width: 100%;
+   		}
+   </style>
+</head>
+<body>
+	<div id="body_cover">
+
+			<!-- <img src="./images/title2.png" alt=""> -->
+
+	</div>
+
+
+	<script>
+		// Index 페이지로 이동되는 동적 페이지
+		var opaIndex = 0;
+		var intervalId = setInterval(function(){
+				opaIndex = opaIndex+0.01;
+				$("#body_cover").css("opacity", opaIndex);
+				if(opaIndex > 0.85){
+					clearInterval(intervalId);
+               setTimeout(function() {
+                  window.location.href="index.html";
+               }, 1500);
+				}
+		}, 60);
+	</script>
+</body>
+</html>

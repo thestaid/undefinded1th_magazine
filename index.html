@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNDEFINED | HOME </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fotorama.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar|Limelight|Montserrat:700" rel="stylesheet">
+</head>
+
+
+<body data-spy="scroll" data-offset="50" data-target=".js-smooth">
+
+
+   <!-- Navigation Bar -->
+   <div class="row" id="nav">
+     <div class="col-xs-2">
+        <a href="index.html"><img src="images/index/title.png" alt=""></a>
+     </div>
+     <!-- 수현 id삽입 -->
+     <div class="col-xs-8 pull-right js-smooth">
+        <!-- 반응형 수현 수정 -->
+        <ul class="nav nav-tabs visible-lg-block visible-md-block pull-right">
+            <!-- 수정 -->
+            <li><a href="#style" id="styleBtn">STYLE</a></li>
+            <li><a href="#event" id="eventBtn">EVENT</a></li>
+            <li><a href="#contact" id="contactBtn">CONTACT</a></li>
+            <li><a data-toggle="modal" data-target="#js_myModal" class="btn">LOG IN</a></li>
+            <li><a href="#">SEARCH</a></li>
+        </ul>
+        <!-- top-menu-icon 수현 삽입 -->
+        <a herf="#" id="top-menu-icon" class="btn glyphicon glyphicon-menu-hamburger visible-sm-block visible-xs-block pull-right"></a>
+        <a herf="#" id="top-search-icon" class="btn glyphicon glyphicon glyphicon-search visible-sm-block visible-xs-block pull-right"></a>
+        <a data-toggle="modal" data-target="#js_myModal" id="top-login-icon" class="btn glyphicon glyphicon glyphicon-user visible-sm-block visible-xs-block pull-right"></a>
+
+     </div>
+   </div>
+    <!-- 반응형의 메뉴탭 -->
+   <div class="row js-smooth" id="menuLowRank">
+           <div class="col-xs-4 visible-sm-block visible-xs-block"><a href="#style" class="btn" id="menuLowRank_StyleBtn">STYLE</a></div>
+           <div class="col-xs-4 visible-sm-block visible-xs-block"><a href="#event" class="btn" id="menuLowRank_EventBtn">EVENT</a></div>
+           <div class="col-xs-4 visible-sm-block visible-xs-block"><a href="#contact" class="btn" id="menuLowRank_ContactBtn">CONTACT</a></div>
+   </div>
+<!-- 수현 수정 -->
+   <div class="row hideMenu" id="styleLowRank">
+           <div class="col-xs-2 col-md-4 visible-md-block visible-lg-block"></div>
+           <div class="col-xs-2 col-md-1 visible-md-block visible-lg-block"><a href="style.html" class="btn">MEN</a></div>
+           <div class="col-xs-2 col-md-1 visible-md-block visible-lg-block"><a href="style.html" class="btn">WOMEN</a></div>
+           <div class="col-xs-2 col-md-1 visible-md-block visible-lg-block"><a href="style.html" class="btn">KIDS</a></div>
+           <div class="col-xs-2 col-md-1 visible-md-block visible-lg-block"><a href="style.html" class="btn">INTERIOR</a></div>
+           <div class="col-xs-2 col-md-4 visible-md-block visible-lg-block"></div>
+   </div>
+<!-- 수현 추가 -->
+   <div class="row hideMenu" id="styleMenuLowRank">
+           <div class="col-xs-2 visible-sm-block visible-xs-block"></div>
+           <div class="col-xs-2 visible-sm-block visible-xs-block"><a href="style.html" class="btn">MEN</a></div>
+           <div class="col-xs-2 visible-sm-block visible-xs-block"><a href="style.html" class="btn">WOMEN</a></div>
+           <div class="col-xs-2 visible-sm-block visible-xs-block"><a href="style.html" class="btn">KIDS</a></div>
+           <div class="col-xs-2 visible-sm-block visible-xs-block"><a href="style.html" class="btn">INTERIOR</a></div>
+           <div class="col-xs-2 visible-sm-block visible-xs-block"></div>
+   </div>
+
+
+   <!-- Top Image -->
+   <div class="container-fluid" id="topimage">
+      <div class="fotorama" data-autoplay="2000" data-allowfullscreen="true">
+         <img class="img-responsive" src="images/index/top1.jpg" data-caption="Fashions fade style is eternal.<br/>&nbsp;"/>
+         <img class="img-responsive" src="images/index/top2.jpg" data-caption="A girl should be two things :<br/>classy and fabulous"/>
+         <img class="img-responsive" src="images/index/top3.jpg" data-caption="In order to be irreplaceable<br/>One must always be different"/>
+         <img class="img-responsive" src="images/index/top4.jpg" data-caption="Fashion is confidence in myself<br/>&nbsp;"/>
+     </div>
+   </div>
+    <!-- Top Image END-->
+
+
+    <!--Contents -->
+    <div class="container">
+
+        <!-- STYLE Part -->
+        <!-- JY : img 파트에 .img-circle 추가 -->
+        <div class="row" id="style">
+            <h1>STYLE</h1>
+            <div class="col-xs-6 col-sm-3">
+                <div class="panel">
+                    <div class="panel-body">
+                        <img class="img-responsive img-circle"src="images/index/style_m_1.jpg" alt="">
+                    </div>
+                    <div class="panel-heading">
+                        <h4 class="panel-title">MEN</h4>
+                    </div>
+                    <div class="panel-footer">
+                        <p class="text-center">입는 순간 훈남 변신,<br>16F/W 셔츠 스타일링</p>
+                        <a id="go-Style-men" href="style.html" class="btn btn-link pull-right">More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="panel">
+                    <div class="panel-body">
+                        <img class="img-responsive img-circle"src="images/index/style_w_1.jpg" alt="">
+                    </div>
+                    <div class="panel-heading">
+                        <h4 class="panel-title">WOMEN</h4>
+                    </div>
+                    <div class="panel-footer">
+                        <p class="text-center">올 가을 유행할<br> 로맨틱한 헤어 연출법</p>
+                        <a id="go-Style-women" href="style.html" class="btn btn-link pull-right">More Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 exam">
+                <div class="panel">
+                    <div class="panel-body">
+                        <img class="img-responsive  img-circle"src="images/index/style_k_1.jpg" alt="">
+                    </div>
+                    <div class="panel-heading">
+                        <h4 class="panel-title">KIDS</h4>
+                    </div>
+                    <div class="panel-footer">
+                        <p class="text-center">엄마와 함께 입는<br> 재치있는 시밀러룩</p>
+                        <a id="go-Style-kids" href="style.html" class="btn btn-link pull-right">More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="panel">
+                    <div class="panel-body">
+                        <img class="img-responsive img-circle"src="images/index/style_i_1.jpg" alt="">
+                    </div>
+                    <div class="panel-heading">
+                        <h4 class="panel-title">INTERIOR</h4>
+                    </div>
+                    <div class="panel-footer">
+                        <p class="text-center">킨포크 스타일의<br> 감각적인 인테리어</p>
+                        <a id="go-Style-interior" href="style.html" class="btn btn-link pull-right">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Style part ENd -->
+   </div>
+
+        <!-- Event start -->
+        <!-- JY .back 추가 -->
+        <div class="row back" id="event">
+            <h1>EVENT</h1>
+            <div class="col-xs-12">
+                <div class="row text-center">
+                    <h4>Hipster로 가는 지름길</h4><br>
+                    <p>합리적인 가격으로 <strong>Undefined 에디터들의 추천 아이템을 구입</strong>하세요!<br>
+                    </p>
+                    <a href="event.html" class="btn btn-default btn-lg centered">입찰하기</a>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Event part end -->
+   <div class="container">
+        <!-- Contact part start -->
+        <div class="row" id="contact">
+            <h1>Contact US</h1>
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" src="images/index/contact.png" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <br><br><br>
+                <h4>UNDEFINED를 만나보세요!</h4> <br>
+                <p>
+                옷장 속에 분명 옷은 있는데, 내일 입을 옷이 없다?<br>
+                한층 <strong>Upgrade</strong> 시켜드립니다! <br>
+                </p>
+                <a style="margin-bottom:10px;" href="contact.html" class="btn btn-default btn-lg center-block" >CONTACT</a>
+                <a id="galleryBtn" href="gallery.html" target="_blank" class="btn btn-default btn-lg center-block" >Editor 패션 구경하기</a>
+                <br><br>
+            </div>
+        </div>
+        <!-- Contact part area end -->
+
+    </div>
+
+
+    <!-- footer part start -->
+    <div class="row" id="bottom">
+        <div class="container">
+            <div class="row bottom-nav">
+                <a href="contact.html" class="btn col-xs-6 col-sm-3 col-md-2">Undefined 소개</a>
+                <a data-toggle="modal" data-target="#notice1" class="btn col-xs-6 col-sm-3 col-md-2">공지사항</a>
+                <a data-toggle="modal" data-target="#notice2" class="btn col-xs-6 col-sm-3 col-md-2">참가자 약관</a>
+                <a data-toggle="modal" data-target="#notice3" class="btn col-xs-6 col-sm-3 col-md-2">취소 및 환불 약관</a>
+            </div>
+            <div class="row bottom-info">
+                <div>
+                    <p>
+                        #UNDEFINED | (주) HBI 연구소 Acorn 아카데미
+                        : 서울특별시 중구 다동88 동아빌딩15층 <br>
+                        대표: 정 영 헌 | 무허가
+                        TEL: 010-2780-6169
+                        <br>
+                        COPYRIGHT(C) #UNDEFINED
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 공지사항 참가자약관 취소환불 알림창 START-->
+    <div id="notice1" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                   <h3><p>-> 2016년 F/W 에디터들의 패션 위크가 시작되었어요</p></h3>
+                   <h3><p>-> 찾아봐 주세요.</p></h3>
+                   <h3><p>-> 경매 물품이 올라왔어요.</p></h3>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="notice2" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                   <h3><p>약관은 계약의 당사자가 다수의 상대편과 계약을 체결하기 위하여 일정한 형식에 따라 미리 마련한 계약의 내용을 뜻한다[1]. 약관에는 이미 작성된 계약조항의 전체를 말하는 보통 거래약관이나 보통약관의 경우와 특약조항이나 면책약관의 경우 등이 있는데, 대량 거래의 수요에 대응하기 위하여 일반적인 계약의 내용을 당사자 한쪽이 미리 정하여 놓은 계약조항을 가리킨다.</p></h3>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="notice3" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                   <h3><p>약관은 계약의 당사자가 다수의 상대편과 계약을 체결하기 위하여 일정한 형식에 따라 미리 마련한 계약의 내용을 뜻한다[1]. 약관에는 이미 작성된 계약조항의 전체를 말하는 보통 거래약관이나 보통약관의 경우와 특약조항이나 면책약관의 경우 등이 있는데, 대량 거래의 수요에 대응하기 위하여 일반적인 계약의 내용을 당사자 한쪽이 미리 정하여 놓은 계약조항을 가리킨다.</p></h3>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 공지사항 참가자약관 취소환불 알림창 END-->
+    <!-- YH -->
+    <!-- login modal start -->
+    <div id="js_myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal">&times;</a>
+                    <h4>환영합니다!</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="###@###.###"/>
+                        <div id="emailError" class="alert alert-danger alert-dismissible">
+                            <button style="color: black;"data-dismiss="alert" class="closeBtn close pull-right">&times;</button>이메일을 입력해주세요.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">비밀번호</label>
+                        <input class="form-control" type="password" id="pwd" name="pwd"/>
+                        <div id="pwdError" class="alert alert-danger alert-dismissible">
+                            <button style="color: black;" data-dismiss="alert" class="closeBtn close pull-right">&times;</button>비밀번호를 입력해주세요.
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a>회원가입</a>
+                    <a>비밀번호 찾기</a>
+                    <div id="popup-login-btn" class="btn btn-primary">로그인</div>
+                    <button class="btn btn-danger" data-dismiss="modal">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login modal END -->
+    <!-- footer part start END-->
+
+
+    <!-- Third party scripts -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+   <script src="js/fotorama.js"></script>
+    <!-- 스무스 스크롤 플러그인 추가 -->
+    <script src="js/jquery.smooth-scroll.js"></script>
+
+    <!-- Our application scripts -->
+    <!-- <script src="js/data.js"></script> -->
+    <script src="js/index.js"></script></body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>UNDEFINED | GALLERY </title>
+    <script src="js/underscore.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      #galleryTitle {
+         width: 360px;
+         height: 50px;
+         /*margin-left: calc((100% - 360px) / 2);*/
+         margin: 0 auto;
+      }
+    .brick {
+    	background-color: white;
+    	float: left;
+    	cursor: default;
+    	overflow: hidden;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center;
+    }
+    .brick .cover {
+    	overflow: hidden;
+    	margin: 20px;
+    }
+    .free-wall {
+        margin: 15px;
+        margin-top: 0;
+        border-top: 60px solid white;
+    }
+    .brick img {
+        margin: 0;
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="row" id="nav">
+        <div id="galleryTitle"
+        style="z-index:99999999;">
+            <a href="index.html"><img src="images/gallery/logo.jpg" alt=""></a>
+        </div>
+        <!-- <div style="color:white; text-align:center;">
+            <span>Gallery</span>
+        </div> -->
+    </div>
+
+
+	<div id="freewall" class="free-wall"></div>
+
+
+    <!-- Third party scripts -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/freewall.js"></script>
+
+    <!-- Our application scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/gallery.js"></script>
+
+</body>
+</html>
